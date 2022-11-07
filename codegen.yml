@@ -1,0 +1,9 @@
+schema:
+  - '${VITE_HYGRAPH_URL}'
+documents: 'src/**/*.tsx'
+ignoreNoDocuments: true, 
+generates:
+  ./src/gql/:
+    preset: 'client'
+    plugins:
+      - typescript
